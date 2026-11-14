@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Pop Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header>
+            <h1>🎈 Balloon Pop!</h1>
+            <p>Pop balloons, avoid bombs and beat your high score!</p>
+        </header>
+
+        <section class="score-board">
+            <div class="stat">
+                <span>SCORE</span>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="stat">
+                <span>TIME</span>
+                <h2 id="time">60</h2>
+            </div>
+
+            <div class="stat">
+                <span>BEST</span>
+                <h2 id="bestScore">0</h2>
+            </div>
+        </section>
+
+        <div class="game-area" id="gameArea">
+
+            <div class="background-cloud cloud-one">☁️</div>
+            <div class="background-cloud cloud-two">☁️</div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay-content">
+                    <div class="big-icon" id="overlayIcon">🎈</div>
+                    <h2 id="overlayTitle">Ready to Pop?</h2>
+                    <p id="overlayText">
+                        Pop as many balloons as possible in 60 seconds!
+                        Avoid the bombs!
+                    </p>
+                    <button id="startBtn">START GAME</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <span>🎈 +10 Points</span>
+            <span>💣 -15 Points</span>
+        </div>
+
+        <button class="restart-btn" id="restartBtn">
+            ↻ RESTART GAME
+        </button>
+
+        <p class="footer">Made with ❤️ using HTML, CSS & JavaScript</p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
